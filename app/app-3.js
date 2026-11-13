@@ -119,6 +119,33 @@ function mergeFeed(...lists) {
     .sort((a, b) => (Date.parse(b.time) || 0) - (Date.parse(a.time) || 0)).slice(0, 80);
 }
 
+// ---- Banner assessment: FAA airport list + what news reports say ----
+// A nationwide stop may not appear in the FAA per-airport list, so news reports also count.
+const RX_STOP = /ground stop|grounded|grounds|halt|halted|halts|stopp/i;
+const RX_NATION = /nationwide|all (u\.?s\.? |us |departing |american )?flights|all departing|all (u\.?s\.? )?airports|across the (u\.?s\.?|us|country)|every u\.?s\.? airport|u\.?s\.?-wide|national ground stop/i;
+const RX_LIFT = /\blift(s|ed|ing)?\b|resum(e|es|ed|ing)|restart|ends|ended|over\b|reopen|back in the air|taking off again|cleared to (depart|fly)/i;
+const RANK = { unknown: 0, normal: 1, minor: 2, elevated: 3, severe: 4, critical: 5 };
+
+function assess(data, feed) {
+  const faa = data?.assessment || { level: "unknown", headline: "FAA status unavailable" };
+  const news = feed.filter(i => i.kind === "news" && i.time);
+  const within = (i, min) => Date.now() - Date.parse(i.time) < min * 60_000;
+  const lifted = news.filter(i => RX_LIFT.test(i.title) && /ground stop|flights|faa/i.test(i.title));
+  const nation = news.filter(i => RX_NATION.test(i.title) && RX_STOP.test(i.title) && !RX_LIFT.test(i.title));
+  const n60 = nation.filter(i => within(i, 60)).length, n180 = nation.filter(i => within(i, 180)).length;
+  const l60 = lifted.filter(i => within(i, 60)).length, l180 = lifted.filter(i => within(i, 180)).length;
+  let news_ = null;
+  if (l180 >= 2 && l60 >= Math.max(1, n60)) {
+    news_ = { level: "elevated", headline: "Reports say the nationwide ground stop has been lifted",
+      note: `${l60} report(s) of flights resuming in the last hour — expect delays` };
+  } else if (n180 >= 2) {
+    news_ = { level: "critical", headline: "Nationwide ground stop in effect",
+      note: `${n60 || n180} news report(s) in the last ${n60 ? "hour" : "3 hours"}` };
+  }
+  if (!news_ || RANK[faa.level] > RANK[news_.level]) return { ...faa, note: "" };
+  return { ...news_, note: `${news_.note} · FAA airport list: ${faa.headline.toLowerCase()}` };
+}
+
 // ---- Rendering ----
 function list(el, items, render) {
   const sorted = [...items].sort((a, b) => isWatched(b.airport) - isWatched(a.airport));
@@ -156,13 +183,12 @@ function renderFeed() {
 
 function renderBanner() {
   const data = lastData;
-  const a = data?.assessment || { level: "unknown", headline: "No data yet" };
+  const a = (data || lastFeed.length) ? assess(data, lastFeed) : { level: "unknown", headline: "No data yet", note: "" };
   const b = $("banner");
   b.className = `banner lvl-${a.level}`;
   b.querySelector(".lvl").textContent = LEVEL_LABEL[a.level] || a.level;
   b.querySelector(".head").textContent = a.headline;
-  b.querySelector(".meta").textContent = data
-    ? `FAA updated ${data.faa?.updated || "n/a"} · server checked ${ago(data.generated)}` : "";
+  b.querySelector(".meta").textContent = [a.note, data ? `FAA data ${ago(data.generated)}` : ""].filter(Boolean).join(" · ");
   $("live").textContent = lastCheck ? `Live · checked ${ago(lastCheck)}` : "Connecting…";
 }
 
@@ -209,9 +235,9 @@ async function load() {
     (lastData?.errors?.length ? ` · Server issues: ${lastData.errors.join("; ")}` : "");
 
   // Alerts: level change, ground stop at a watched airport, new news headlines.
-  const a = lastData?.assessment;
+  const a = assess(lastData, lastFeed);
   const gsNow = new Set((lastData?.faa?.ground_stops || []).map(g => String(g.airport).toUpperCase()));
-  if (a && a.level !== "unknown") {
+  if (a.level !== "unknown") {
     if (lastLevel && a.level !== lastLevel) notify(`Status: ${LEVEL_LABEL[a.level]}`, a.headline);
     const newWatched = [...gsNow].filter(c => isWatched(c) && !lastGs.has(c));
     if (newWatched.length) notify(`Ground stop: ${newWatched.join(", ")}`, "One of your airports is now under a ground stop.");

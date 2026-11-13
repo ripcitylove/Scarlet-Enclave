@@ -1,7 +1,7 @@
 // Network-first for everything so new versions and data show up immediately;
 // the cache is only an offline fallback.
-const CACHE = "gsw-v2";
-const SHELL = ["./", "index.html", "app.js", "manifest.webmanifest", "icon.svg", "data/briefing.json"];
+const CACHE = "gsw-v3";
+const SHELL = ["./", "index.html", "app-3.js", "manifest.webmanifest", "icon.svg", "data/briefing.json"];
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).catch(() => {}).then(() => self.skipWaiting()));
 });

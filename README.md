@@ -21,7 +21,7 @@ FAA ground stop and the air traffic control communications outage.
   headlines (social posts too if you tick "Alert on social").
 
 ## Open it on your phone
-**https://raw.githack.com/ripcitylove/Scarlet-Enclave/live/index.html**
+**https://raw.githack.com/ripcitylove/Scarlet-Enclave/live/index.html?v=3**
 
 No settings needed: raw.githack.com serves the `live` branch as a web page. Optionally, you can instead
 use GitHub Pages: Settings → Pages → Deploy from a branch → `live` / root.
