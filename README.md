@@ -11,11 +11,14 @@ FAA ground stop and the air traffic control communications outage.
 - Alerts (phone notifications and vibration) when the status level changes, a watched airport gets a ground stop, or new headlines arrive
 - Links to the FAA, airline advisory pages, and DOT refund rights
 
-**How it updates**
-A GitHub Action (`.github/workflows/update.yml`) runs every ~5 minutes. It fetches the FAA feed and
-Google News RSS (`scripts/fetch_status.py`) and force-pushes the app and fresh data to the `live` branch.
-The app re-checks every 60 seconds and whenever you reopen it. If the server data goes stale, the phone
-pulls headlines directly from GDELT.
+**How it updates (about every 60 seconds)**
+- **Server:** `.github/workflows/update.yml` runs a continuous loop. Every 60 seconds it fetches the FAA feed
+  and Google News (`scripts/fetch_status.py`) and pushes to the `live` branch whenever anything changes.
+- **Phone:** every 60 seconds while the app is open, it pulls the newest FAA data from GitHub and fetches
+  live news (GDELT) and public posts (Bluesky, Mastodon) itself, so breaking items don't wait on the server.
+  It also refreshes the moment you reopen the app or reconnect.
+- New items get a NEW badge. Alerts fire for status changes, ground stops at your airports, and new news
+  headlines (social posts too if you tick "Alert on social").
 
 ## Open it on your phone
 **https://raw.githack.com/ripcitylove/Scarlet-Enclave/live/index.html**
@@ -28,5 +31,5 @@ use GitHub Pages: Settings → Pages → Deploy from a branch → `live` / root.
 
 ## Limits
 - Alerts fire while the app is open or recently in the background. True push while closed would need a push server.
-- GitHub may run scheduled jobs less often than every 5 minutes when it's busy.
+- If GitHub delays the scheduled job, the phone's direct live sources keep the feed moving; the banner warns when FAA data is over 15 minutes old.
 - Update the "Background" card by editing `app/data/briefing.json`.

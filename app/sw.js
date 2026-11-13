@@ -1,8 +1,9 @@
-// Network-first for live data, cache-first for the app shell.
-const CACHE = "gsw-v1";
-const SHELL = ["./", "index.html", "app.js", "manifest.webmanifest", "icon.svg"];
+// Network-first for everything so new versions and data show up immediately;
+// the cache is only an offline fallback.
+const CACHE = "gsw-v2";
+const SHELL = ["./", "index.html", "app.js", "manifest.webmanifest", "icon.svg", "data/briefing.json"];
 self.addEventListener("install", e => {
-  e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).then(() => self.skipWaiting()));
+  e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).catch(() => {}).then(() => self.skipWaiting()));
 });
 self.addEventListener("activate", e => {
   e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== CACHE).map(k => caches.delete(k))))
@@ -10,14 +11,12 @@ self.addEventListener("activate", e => {
 });
 self.addEventListener("fetch", e => {
   const url = new URL(e.request.url);
-  if (url.origin !== location.origin) return;
-  if (url.pathname.endsWith("/data/status.json")) {
-    e.respondWith(fetch(e.request).then(r => {
-      const copy = r.clone(); caches.open(CACHE).then(c => c.put("data/status.json", copy)); return r;
-    }).catch(() => caches.match("data/status.json")));
-    return;
-  }
-  e.respondWith(caches.match(e.request).then(hit => hit || fetch(e.request)));
+  if (e.request.method !== "GET" || url.origin !== location.origin) return;
+  const key = url.pathname.endsWith("/data/status.json") ? "data/status.json" : e.request;
+  e.respondWith(fetch(e.request).then(r => {
+    if (r.ok) { const copy = r.clone(); caches.open(CACHE).then(c => c.put(key, copy)); }
+    return r;
+  }).catch(() => caches.match(key, { ignoreSearch: true })));
 });
 self.addEventListener("notificationclick", e => {
   e.notification.close();

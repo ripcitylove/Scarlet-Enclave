@@ -49,6 +49,18 @@
   .links { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
   .links a { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 10px; font-size: 14px; }
   .warn { color: var(--elevated); font-size: 13px; margin-top: 8px; }
+  .livebar { display: flex; align-items: center; gap: 6px; color: var(--muted); font-size: 13px; margin: 0 0 10px; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--normal); }
+  .dot.pulse { animation: blink 1s infinite; }
+  @keyframes blink { 50% { opacity: .25; } }
+  .seg { display: flex; gap: 6px; margin-bottom: 8px; align-items: center; flex-wrap: wrap; }
+  .seg button { padding: 6px 12px; border-radius: 999px; font-size: 14px; }
+  .seg button.on { background: var(--text); color: var(--bg); border-color: var(--text); }
+  .seg label { margin-left: auto; color: var(--muted); font-size: 13px; display: flex; gap: 6px; align-items: center; }
+  .tag { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .6px; padding: 1px 6px;
+    border-radius: 6px; display: inline-block; margin-bottom: 4px; }
+  .tag-news { background: #1f3a5f; color: #9fd0ff; } .tag-social { background: #3b2a4d; color: #d9b8ff; }
+  .news.fresh { border-color: var(--elevated); }
   footer { color: var(--muted); font-size: 12px; margin-top: 24px; }
 </style>
 </head>
@@ -61,6 +73,7 @@
   </div>
 </header>
 
+<div class="livebar"><span class="dot" id="dot"></span><span id="live">Connecting…</span></div>
 <section id="banner" class="banner" aria-live="polite">
   <div class="lvl">Loading…</div>
   <div class="head">Checking FAA status</div>
@@ -80,7 +93,12 @@
 <h2>Closures</h2><div id="cl"></div>
 <h2>Arrival / departure delays</h2><div id="dl"></div>
 
-<h2>Latest headlines</h2><div id="news"></div>
+<h2>Live feed</h2>
+<div class="seg" id="feedTabs">
+  <button type="button" data-f="all">All</button><button type="button" data-f="news">News</button><button type="button" data-f="social">Social</button>
+  <label><input type="checkbox" id="notifySocial"> Alert on social</label>
+</div>
+<div id="news"></div>
 
 <h2>Background</h2><div id="brief"></div>
 
@@ -99,8 +117,8 @@
 </div>
 
 <footer>
-  Data: FAA NAS Status API and news headlines, refreshed on the server every few minutes; this page re-checks every 60 seconds.
-  Headlines are automated search results. Check the FAA and your airline before you travel.
+  Updates every 60 seconds: FAA status and news headlines from the server, plus live news (GDELT) and public posts (Bluesky, Mastodon) fetched directly.
+  Feed items are automated search results and social posts are unverified. Check the FAA and your airline before you travel.
   <div id="foot"></div>
 </footer>
 

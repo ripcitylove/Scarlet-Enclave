@@ -1,12 +1,13 @@
 name: Update flight status
 
-# Every run fetches fresh FAA status + headlines and force-pushes the app and data
-# to the `live` branch (one commit, no history buildup). The app is served from that
-# branch, so no GitHub Pages settings are needed.
+# Near-real-time feed: each run loops for ~50 minutes, fetching FAA status + headlines
+# every 60 seconds and force-pushing the app and data to the `live` branch whenever
+# anything changes (plus a heartbeat every 10 minutes). The schedule queues the next
+# run behind the current one, so coverage is continuous.
 
 on:
   schedule:
-    - cron: "*/5 * * * *"   # GitHub may run this less often under load (often every 5-15 min)
+    - cron: "*/10 * * * *"
   push:
     branches: ["claude/flight-comms-grounding-app-xfh46y", "main"]
   workflow_dispatch:
@@ -16,24 +17,36 @@ permissions:
 
 concurrency:
   group: live-update
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 58
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Fetch FAA status and headlines
-        run: python scripts/fetch_status.py
-      - name: Publish app + data to the live branch
+      - name: Fetch and publish every 60 seconds
+        env:
+          REMOTE: https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
         run: |
-          cd app
-          git init -q -b live
-          git config user.name "flight-status-bot"
-          git config user.email "flight-status-bot@users.noreply.github.com"
-          git add -A
-          git commit -qm "Live data $(date -u +%Y-%m-%dT%H:%MZ)"
-          git push -qf "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" live
+          git config --global user.name "flight-status-bot"
+          git config --global user.email "flight-status-bot@users.noreply.github.com"
+          publish() {
+            rm -rf /tmp/site && cp -r app /tmp/site && cd /tmp/site
+            git init -q -b live && git add -A
+            git commit -qm "Live data $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push -qf "$REMOTE" live || echo "push failed"
+            cd - >/dev/null
+          }
+          end=$((SECONDS + 50*60)); last=""; lastpush=-9999
+          while [ $SECONDS -lt $end ]; do
+            python scripts/fetch_status.py || true
+            h=$(jq -S 'del(.generated)' app/data/status.json | sha256sum | cut -c1-16)
+            if [ "$h" != "$last" ] || [ $((SECONDS - lastpush)) -ge 600 ]; then
+              publish && last=$h && lastpush=$SECONDS && echo "published $h"
+            fi
+            sleep 60
+          done
