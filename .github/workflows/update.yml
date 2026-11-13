@@ -1,27 +1,26 @@
 name: Update flight status
 
+# Every run fetches fresh FAA status + headlines and force-pushes the app and data
+# to the `live` branch (one commit, no history buildup). The app is served from that
+# branch, so no GitHub Pages settings are needed.
+
 on:
   schedule:
     - cron: "*/5 * * * *"   # GitHub may run this less often under load (often every 5-15 min)
   push:
-    branches: ["**"]
+    branches: ["claude/flight-comms-grounding-app-xfh46y", "main"]
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
-  group: pages
+  group: live-update
   cancel-in-progress: true
 
 jobs:
-  deploy:
+  update:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -29,9 +28,12 @@ jobs:
           python-version: "3.12"
       - name: Fetch FAA status and headlines
         run: python scripts/fetch_status.py
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: app
-      - id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Publish app + data to the live branch
+        run: |
+          cd app
+          git init -q -b live
+          git config user.name "flight-status-bot"
+          git config user.email "flight-status-bot@users.noreply.github.com"
+          git add -A
+          git commit -qm "Live data $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -qf "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" live
