@@ -4,7 +4,7 @@ name: Update flight status
 # every 60 seconds and force-pushing the app and data to the `live` branch whenever
 # anything changes (plus a heartbeat every 10 minutes). Before finishing, each run starts
 # the next one itself (GitHub's schedule is unreliable), until RUN_UNTIL. To stop early,
-# disable this workflow under the repo's Actions tab.
+# cancel the running workflow or disable it under the repo's Actions tab.
 
 on:
   schedule:
@@ -56,7 +56,7 @@ jobs:
             sleep 60
           done
       - name: Start the next run
-        if: always()
+        if: ${{ !cancelled() }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
