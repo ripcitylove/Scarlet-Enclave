@@ -1,0 +1,310 @@
+{
+ "generated": "2026-11-21T12:56:16+00:00",
+ "assessment": {
+  "level": "elevated",
+  "headline": "8 ground delay program(s)/closure(s)"
+ },
+ "faa": {
+  "updated": "Sat Nov 21 12:55:47 2026 GMT",
+  "ground_stops": [],
+  "ground_delays": [
+   {
+    "airport": "AUS",
+    "reason": "runway construction",
+    "avg": "43 minutes",
+    "max": "1 hour and 46 minutes"
+   },
+   {
+    "airport": "LGA",
+    "reason": "runway construction",
+    "avg": "22 minutes",
+    "max": "52 minutes"
+   }
+  ],
+  "delays": [],
+  "closures": [
+   {
+    "airport": "SNA",
+    "reason": "!SNA 11/020 SNA AD AP CLSD DLY 0730-1415 2611150730-2611211415",
+    "start": "Nov 15 at 07:30 UTC.",
+    "reopen": "Nov 21 at 14:15 UTC."
+   },
+   {
+    "airport": "HTS",
+    "reason": "!HTS 11/044 HTS AD AP CLSD EXC 20MIN \rPPR 122.950/304-453-6165 2611211200-2611212200",
+    "start": "Nov 21 at 12:00 UTC.",
+    "reopen": "Nov 21 at 22:00 UTC."
+   },
+   {
+    "airport": "LAX",
+    "reason": "!LAX 05/277 LAX AD AP CLSD TO NON SKED TRANSIENT GA ACFT EXC 24HR PPR CTC ATLANTIC AVIATION 310-258-9884 OR SIGNATURE AVIATION 310-410-9605 2605271826-2705281600",
+    "start": "May 27 at 18:26 UTC.",
+    "reopen": "May 28 at 16:00 UTC."
+   },
+   {
+    "airport": "SBP",
+    "reason": "!SBP 11/024 SBP AD AP CLSD 2611210727-2611211300",
+    "start": "Nov 21 at 07:27 UTC.",
+    "reopen": "Nov 21 at 13:00 UTC."
+   },
+   {
+    "airport": "SAN",
+    "reason": "!SAN 10/004 SAN AD AP CLSD TO NON SKED TRANSIENT GA ACFT EXC PPR 619-298-7704 2610011633-2701010800",
+    "start": "Oct 01 at 16:33 UTC.",
+    "reopen": "Jan 01 at 08:00 UTC."
+   },
+   {
+    "airport": "LAS",
+    "reason": "!LAS 10/160 LAS AD AP CLSD TO NON SKED TRANSIENT GA ACFT EXC 24HR PPR 702-261-7775 2610281926-2701272300",
+    "start": "Oct 28 at 19:26 UTC.",
+    "reopen": "Jan 27 at 23:00 UTC."
+   }
+  ],
+  "other": [
+   "Airspace Flow Programs"
+  ]
+ },
+ "news": [
+  {
+   "title": "FAA Halts Nationwide Flights in Four-Hour Ground Stop",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOdHpVSlVfSkg3Y3BQZ0M3N1cxandJVnAtd1dzOG9MZDBZTzRXUTRmT0lVQmN2OE4xXy0waXJXNzNsWDBraTJmSW5sbW02ZHNmckdJREZVclBpQVBkVEU0akNUcFRmYVlXMWZyS2g0c2xEc21BMlNySVNlT0ktMlBFZzNvWFN1am1jUWNTWGV3NGZrbk40VDFpOU8xMWw?oc=5",
+   "source": "Wisevoter",
+   "time": "2026-11-21T12:12:17+00:00"
+  },
+  {
+   "title": "South Florida\u2019s major airports take hits as consumer surveys hand out low performance grades",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQT2lTNF9aSFpQbV9FZXcwU3pjdUlIOEVUaVpDaURFNjlhSElZcnRZT2tSZlJ3N0NVbkJCSTgwVlJpWTBxMHd4bWtiTkI2ZDJwUFJJVGhfVEZxeDlDZjdGYUEyY2EyNjVqalBSakM2ZUMwc1lBSGVQRmdaUUtfaHFnVjRYUFNGUHJUQVJOaFJrTk5xeGs2SnhCVGVzckhESzVvaXRZTnJVQnZSbmpSQlU2NFpXY0hzNXdrbE9BWURMZjRjYnlfTkhDXzhRc0x2OEk2LWQ5a2Qtbw?oc=5",
+   "source": "Sun Sentinel",
+   "time": "2026-11-21T12:02:19+00:00"
+  },
+  {
+   "title": "How we photographed O'Hare during a nationwide FAA ground stop",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPYktEMk5wTFR1X1Z0Y2F1RE1YdGhTek1pWHhtcTFrWGVsaDRpZlBOdUo2OEtZZlY1Tkd6VDZjXzloOEFvSWdQamxwc04yQzRLZG5PeFlYOGRSbk1ZOVZlQm9Xb2MtZHJCYmgxc0tCc1laV3ZCRTRCanNqQTE1aVdWQ2RQMEpEQWl3VFZSVFhLT1ZUX0d3bnRkVFN3TVcyYWVwRjBtZWNpTQ?oc=5",
+   "source": "Chicago Sun-Times",
+   "time": "2026-11-21T12:00:00+00:00"
+  },
+  {
+   "title": "This bozo handed America a ransom note \u2014 with no idea of a plan",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBMUGM3eTl5YzFGMjU1TVgyX3Q0MnBwRzN6TmNreEVSTGNvYjBnVS02c3A1MlM2OVN6TUhjVl90cTJ3UjU4ZGNJNGw3eWMtM1R2Z1B1RjNFaEdtdGZYcmZMejdKZ3lhQXPSAWNBVV95cUxNc1ZfTjFtSU16S0FlaFYtdjlmelZEMzBsX2NvNS1GZE9UYnYzTDk0QWtLTUtlZGpFMTJINThRaDVGeldHaVNhSXA2YlBvRTVGcm9xaFk3bEM1LTdIdktDZl9XaGs?oc=5",
+   "source": "Raw Story",
+   "time": "2026-11-21T11:30:00+00:00"
+  },
+  {
+   "title": "The next big travel nightmare could start at the TSA check-in line",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBnbVpPVzNwQU1PcHB3dmdUMnRHQTZuS1pVbEVzRks0aERiZ0g3RUlGWVhaSi10Q0NUd0pxSkNUd01hbjV5Q2ZCZzFiV1hGemEwV0xySHB2WGJPWC1WM29QVGx0VmM3X09WeWZ2VzBuVEtoTnNNaldBY2dTbw?oc=5",
+   "source": "CNN",
+   "time": "2026-11-21T11:00:16+00:00"
+  },
+  {
+   "title": "American Meltdown: Inside days of critical infrastructure failures across the US",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPU0NVUXVPejlMYjcxNDZwWmtZR2pKNEVzLVh5OG5qSDZTTlNnbTQwUGNvc0g4MTRFSVE1SUdZZ0FjM0cxVGlKaVc0MEFmcnJIUHo2ZzNUQVRyYVU2ZVVweHF2TkdXdlFoYjdLeGVRTFEtT1FhbUlvYTZuTUwydUttVDU3X25CYUdIYmk2STlJWVhRNURCaGVSbWN1UWpNYUR4T0tXLXFtWTlfb1BBbDI0cV96eXN2UjVlX2hqeW5TSG9nYVZrUEo0Nzc3a2RySmM?oc=5",
+   "source": "FOX 17 West Michigan News",
+   "time": "2026-11-21T09:07:48+00:00"
+  },
+  {
+   "title": "FAA signed off on router replacement just before ground stop, report states",
+   "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9qdkhKWkJmenJQaTdwRGpkZmlUZldkeUwzS0RMVVRWMVJoRnhUckxqcEF4b2llckRneHo5RmQzUTRPMTRfSXFYcW1VWDhfTmotWmNQcmZHdS01ZzN6M0labi1OYw?oc=5",
+   "source": "Mashable",
+   "time": "2026-11-21T09:06:41+00:00"
+  },
+  {
+   "title": "US lifts ground stop for airports hours after halting all departures",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZHp3MkNTUWEtWmxab0p4QTVUdmpLM3JONkJWQzBaaDNteEdzM1lHb3BIenBnUzVSQ0kzcENibUxNRnRhbnQ3cWxqZFM1QklLYWU4OUItOWhYWkxMV1JaOFN4N21nM21nbmVCUHo1eEJUc0VYNDd0UWt4eFRUeWo2cHdFUHpERkg3MGlVWHBKNjdIeGNwTFFPdDBKNTdPck5INTNKWXhlQTFUNVdQaWhkOQ?oc=5",
+   "source": "The Business Standard",
+   "time": "2026-11-21T07:26:43+00:00"
+  },
+  {
+   "title": "FAA ground stop: When will it end? Not as soon as you'd like.",
+   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1mTzR3SkRXLXgzWk1FSlRoSmpzaEhIVDBfd25Pby00X2Y5cTdVMXphdFdySUNXVlNTbEViMlBFc2FfNnk4NWZJNHRVdUx2V2R0eEpsUVJWOC1uYkFyRGhsNEZEQTNOTlRUMFE?oc=5",
+   "source": "Mashable",
+   "time": "2026-11-21T07:26:06+00:00"
+  },
+  {
+   "title": "College Football, pro leagues alter schedules following FAA ground stop",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQVVPZUx6UDJlNHlFRE5tWTlyZ2hQOW5CWkVFUFRmNlZDbTZrTWM1cVJkdTg5anAyaDFIZWlSYTYxb093aDJBaUlfX0VLX0tyMUVTSnJ3MGJlV2JWNXdWNEdsX0dFem0zeWRGM0hZVkgyc0ZYR2lWckw4TUZrMEE4QnA4bjJQVzh5NkJaT0hTVktRemxpRVhqMDI2UE8zMk1tNGVldUVHS2lWOTR2M3Z6YVZVV0k?oc=5",
+   "source": "Scripps News",
+   "time": "2026-11-21T07:15:54+00:00"
+  },
+  {
+   "title": "FAA launched new AI air traffic tool three days before national ground stop",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9oVXE3ZmF0WkYzN2R6MUdURzFzSTNqY3VmNEc0bDNlTm1sUGJ5TGhFd3JFVENkNFVGNWh1bWVBR0JMSGVJUHJMWGZGWmdlbFdxYkd2T0lHZG40YW1ySDYyUFNielR4cjduWmxodXhvT1IwMzA?oc=5",
+   "source": "Mashable",
+   "time": "2026-11-21T06:54:33+00:00"
+  },
+  {
+   "title": "FAA nationwide ground stop: Why it happened, according to officials",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9WQ0tKcG9WQmR6MldmRXJiMVJ3YmpyTHl0MGNMQlNnNkpIWDA0YmZLTWJWdW40QUlLVkVLYmxwMzd5clhxWlB4a3RERVVPM2ExOE8zZnFJVkV5elJDc2xlZkhVUmtmSFk?oc=5",
+   "source": "Mashable",
+   "time": "2026-11-21T05:03:46+00:00"
+  },
+  {
+   "title": "Trump Calls US Air Traffic Control Systems 'Ancient' but 'Safe' a Week After Four-Hour Nationwide Ground Stop",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5nQ0Y2NlBreldBZi03TURrNTF1dXQxTzQzUV9YaDVUamtoYzg2LXZMWWZfX2d3bHlRWE9JSUlFUHlBbjNHUTBBSzVXcUlIUlFFd1JPb0RUNmt4SjJtZkZTbTVUVDhnMy1Dc1NNeWJxT29lVFU?oc=5",
+   "source": "Avi-Go",
+   "time": "2026-11-21T04:52:34+00:00"
+  },
+  {
+   "title": "Thanksgiving travelers remain vigilant after nationwide FAA ground stop",
+   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOLXlBekhJZHlReV9BOVBDMVA4SF9jU1VrQXNpWnZXTVBwSlpXNk1Rc1U5YlBNRkg5Snd6ZV94X3NvUFJKN18zNzhDdkVZQk5HbnhuU0UwZXVOa3hTWkozb0Y2TlVlV2FXb0ltc3VIb1hwZ0U3R0c5RTNGcF9jSlBiWkpPT1pHTC1GY2t5WlFjWjlXWWY1OFpTS0F5VVJydVFBZzNhX1FwVUNBVVJEY0NNRHZudEhxUGpPMV9uaHJjQ05tTFZ5M2tuU3BQSXZUaDlJS0VZQjhJeGFmdnJxRG12blpZeGFRRjZsbkdsSXZyWDFjaktIdG9n?oc=5",
+   "source": "localmemphis.com",
+   "time": "2026-11-21T04:25:00+00:00"
+  },
+  {
+   "title": "Air Niugini flight makes safe emergency landing in Davao",
+   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNTVhlMENELVZqU2hzSHBFYkFmVEllLURMbzR5bmdpeElLUG0zVXdRZjZMbzduU2NxWWhXemd4Z2lQWXhuOW1NMmo5bHRGTWhZVVpJN3k4SlMzalJfLWJLX3JpWm9zSDE2eG9uVkl6MmNyVUxlUHhmcWZfMDF2YWNGX3hLNFpIZw?oc=5",
+   "source": "Ticker News",
+   "time": "2026-11-21T04:10:58+00:00"
+  },
+  {
+   "title": "FAA ground stop fuels flight delay worries ahead of holiday travel rush",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9KMGV1NFgwbjNDUzQ4bUxsWHhTM21VRnRielVrNnBGQWRsXzFsanF1Vk9GUmV1dDFxMktjNHRWVF93Q2trZ0Jha0pYWkpZTjlNMklfVC1R?oc=5",
+   "source": "Fox News",
+   "time": "2026-11-21T03:11:33+00:00"
+  },
+  {
+   "title": "Flight status tracker: How to check online after FAA grounds all flights",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQbDBuWnRiRGdCdmt4X0h6azFIM0pnWkJWanNFd1BxX21vNWxiU2lPdjZZRDZNM0x6SUxjMEhkOEdJRDNDT2xJbWdOa0kzOUZOWnJNYTdoTHRiOV9aMnVJZFg0YlhDQl9XdXAtclhtbEw2bUlrS2tsSWIxVXVrSEF4N3J3cVBiY0hycjRkZHY5OA?oc=5",
+   "source": "Mashable",
+   "time": "2026-11-21T02:51:39+00:00"
+  },
+  {
+   "title": "Thanksgiving travelers head to airports early following nationwide ground stop",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOWHlZNW9MazBWZmF0X3dGTUdoREpRTmtXSGRVVE1acmlmYWVsOFlHMkx1S3p4NVVkbVlmSjc0clQ5WGRiZlBxcFE2WlgzQjc3UXlIM2d1SVllWG1Zc2dXdDFEUFNpOC1YVFVjQ1NSY2NXTG1lMTMtanI5NVRaT3NtWlU1Zm1EY2RXRVgyVlBPcDdfZy1Fd2hqcEhHSTFQVkZvZXgwZktXRVdOdlByU3fSAbMBQVVfeXFMTUkxeFhlcl9PRlRXaVdDcjMzbFJyQnkzbUN6bXJLelJja2gzX2p4M2Nid1NrU25nQnNMMFZfc1U0bTlUSVdfVHZQUGtNX1FEZWpadUZuellZUmt1YV9QTWcwZ0R3WWxxamoyX282MENKam5IQjU1V3NRTzQxMnptdkphZUxUSzZvX0ljY2dHV09iTGZibm1OdldyWllfNTJ4SXRzOFFZNzFqYmVNMDNBU1ptU28?oc=5",
+   "source": "ABC7 New York",
+   "time": "2026-11-21T02:23:44+00:00"
+  },
+  {
+   "title": "American Heritage Riverboat passengers make it back to Pennsylvania after crash, FAA ground stop",
+   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQV2ZmMk1JZEd0S2R3bjlJZGwzY0FjaXctamY3RWw5RzNaY3B3Z0czdVM3dDlXR2Y3ZTJqWU9vUHptRGxacmxrOFRycXl1eThZN3FaRklxMmVEMlhUZE5MaU9XQnNOUnJLX0VEbmRkQjZhdlozOFF0SnkwSENETTBXTjE5T19kTF90T1VGRmJPeFQ1dVhsaFA2aHNjclMtY1dSZnpkbklrNFFyb3FrLUxGQmlCbS1kNXg1aWViZy16d2NOVC05aXd1T1lEUEsxRXJTWkZtdnU0SjlHVEpXWkE3YUpBZWZMdW1FVURhTkZR?oc=5",
+   "source": "WPXI",
+   "time": "2026-11-21T02:12:43+00:00"
+  },
+  {
+   "title": "Fear after FAA ground stop makes fliers abandon air travel for road trips: 'Won't take the chance'",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9PV2RQa0gyd3JZVnJxbFpkUjBQeE42emhiYnBOMzNsZWx3MkdObmh6bkdJVURUUXlIaThBeUhsZG1GS3JxZTZyS21mcmhCbHpFMlFIWG9R?oc=5",
+   "source": "Fox News",
+   "time": "2026-11-21T01:57:30+00:00"
+  },
+  {
+   "title": "After the FAA's ground stop, not all airlines recovered equally",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQb0htLVBDdlJkWExpbzhFdEtSSWFQWUVERFgwOFRDYWQxZzZXQWZ0UkxEZnNjYnZXcnNtZHp4cHFQRlMtVXdSdVNERng5U2tXR1hOQUdwWnlsOVF6MkZBWnR4YzNvWnRWc05wTDM2MVpVdU8yNENicXJqeDQyQmNyUERETTYtM2VhS0Qzb0pGM3BNSWFHRjB4Wg?oc=5",
+   "source": "Travel Weekly",
+   "time": "2026-11-21T01:37:44+00:00"
+  },
+  {
+   "title": "Trump says recent tech outages 'all separate events' and 'bad things happen' with upgrades",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOSk1IOHo1cW5aeDdvaGs1d2RiRmFQMms3Nm8tVzQwYlprNWFtZXFqQUxYTWJQVVpaNS1ST196NzJrZ1JRTmE0Q0xrV2swZXlkZFpFa3o5VXFFdDl5Tm0tRC1rckhyb3F4TGtsSGxiakZtVEJfSEVCdTFrY1ZCZWFxYUFZUjlSQkhNc25oWkZUejhHQ2lvN2p0RFJpdEdkcmNKVU43SVJhajRYNWdJZG5ZN2dYSERGUEFKemVxN3M2S242QQ?oc=5",
+   "source": "NBC News",
+   "time": "2026-11-21T01:29:23+00:00"
+  },
+  {
+   "title": "'We have to get the money': Trump pushes Congress to approve $50 billion for FAA upgrades",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQcThlYnRicnpZbkhCVDZwMF9SUVVMVkdHbUhIbklxUU8wTEQ4NThrRXFjcWthX3oyblB0aGtOU2l1azR1X3FCYzRpaGZpMXRlVXhKSzNfMXE3Q0tzUjNXT1FQbG9wV1R5dGNYTTZfWHdidzlhc0VjSjdOc2NaM1VNTWdjZktTSVZfRDJtaDZ1YmRoblpQa3c?oc=5",
+   "source": "KCRA",
+   "time": "2026-11-21T01:16:00+00:00"
+  },
+  {
+   "title": "Trump says US flight systems are 'ancient' but 'safe' after ground stop",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0zX2hQZHU3TmdvZThORDBRUVFaVVYxU2xDd1FQc3RjcWhyUWZVeUFocGdvRkctVldzbUVMZjd2bVI5bzR2YlJxYy1CSFR4VnU2TnBzU1FOSkdSTFE?oc=5",
+   "source": "BBC",
+   "time": "2026-11-21T01:02:08+00:00"
+  },
+  {
+   "title": "Tucson International Airport flights back on track after FAA ground stop chaos",
+   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNSUg2dEJwYi05SURSdzBMaG1CZDI2Nkk2XzdTN0t6RTNEQXJxc2ZoRVU1dnVWWGwxaFB6SVZXLUxJZ3dNMlMwNXVGMXV2Q3piRXJ2ZHU5a0tvRmxhbHJQNkpBWW1MUVNSZG1mcUdiWHFiX2cwRmpFQ1J0REtKTWpRY3hpaUdoVjBQdHJsMGZJYVEwNlEwQmVwckR6REVINU9FSXdaOWdCU2hLV1ZPNDN0cFZ2WkM5bHBiVUZlMGZ2alRQNG0yQzFGTFBCM2x3LUNnRGpHMm9qWWRTbW9vZnViZUR1aXRzZVIzd0tjWGRpSTg4UQ?oc=5",
+   "source": "KVOA",
+   "time": "2026-11-21T00:22:39+00:00"
+  },
+  {
+   "title": "Olathe company building radar, radios for FAA says it has delivered 4,500 radios",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNZGVzenBmZTVzZEhfMU54dXJpRGFpY0gyNEZ0eDRJVXBiSzlwN1V0dXVPS2FnREdudjN5M3J2VEZrUWhydTdyYzFjNEtRc2tZVFBBNG1pSHNjS0x0b2pzLVpfeklDaVViVnFMaFU1cURqM1I2cHVkSmQ4bm9VQkhZWnhrZDZGUDBUV2ZiN283S2d2YnFldGRkbEJtZ1N2NkhOa3JOYklrQ3M3NGQ40gHAAUFVX3lxTE15ZkRMWHh1M1lQOFBtanRJcHRNU0kwVTNQRVMzMXd2TEJmVGtJRFdXMTMtTWRfazF6UTBVekZTYUl6Q3NWOHdIa2U0SDVkcDBLR2FJVjhCS01WdndxYUNLM19la0pyQXZaNkdpLWV2b0YteTBZaU50UjdFZ0hkRjBpVG5CLVZXMnJMaWdWQkNHb1RaajctYk1TWXllRl9lOE9TUmNYS1N3OXROTFQ2aFBfM09WclJoLXZqY3Zld29LTQ?oc=5",
+   "source": "KCTV",
+   "time": "2026-11-21T00:19:00+00:00"
+  },
+  {
+   "title": "Flight delays, cancellations on consumers' minds during Thanksgiving travel after ground stop",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPcDNtNWZuOFRvRURrX2ZwTUY1bDBydmstd0NiUVItcXpqRWRvaUVFYng2emZoZGhMcEU5RWg3cndPUEsxanpnTHg3TzYxd2VvYlA0RklWMF9aMGF3TXZMVDZxRVJ0TmliMFVKXzQzNjlRRnZlVFc2MFB5ZTE5VGd6NVpyNUZJck9zX3RiRGlZaGtBSDlpaDNCd0xhV0N2Zw?oc=5",
+   "source": "KMBC",
+   "time": "2026-11-20T23:58:00+00:00"
+  },
+  {
+   "title": "Savannah airport travelers brace for potential Thanksgiving delays after FAA ground stop",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQTjEtcjgzWmZ2djRsUERELVFqRmtxYmtvaHNRMHZOS1pfOTltRUxMQ2pmTnlZY2ZrdnFJcWxoYlgxY1RGd3N4TTd5YnRvZHpndXJmemhTeVZqdGxsY1QxNXNWanVWS05jbFlFZVBYc3daaDFnb0hKVGpzT3JHeDFmMnhhMzBEaGJW?oc=5",
+   "source": "WJCL",
+   "time": "2026-11-20T22:54:00+00:00"
+  },
+  {
+   "title": "Thanksgiving 2026 Travel, FAA Ground Stop, More To Know In GA",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPNWdTUVRCVnJ1VFozYWY0elNWdnNBZi1NOGZrZlJRdmJxQ0ZhOUxwRU5fOXc0M3hVYWp3Ympqa20tQUJ4WGhrQ0kzendaM0VOY19DU0JqckU4aHdDWUgxMHJYOEQ4SENvSFF0XzlYMkJlSUprYmsxSjl6NXNmVXo1MUotWXBEaHhEOFlqdjRQbWLSAaoBQVVfeXFMT19OUUk4V1FDNmpKaGZLd3FJcjRqTG1wWUZHWU1fYW9rU0VrWFc2QURUVEROZGpqUEQ1RURHOGRVN1NvSGpRVUNMbzJDM3NfWHdyZkN3aHNrZWc3bzk5QXhnbHdRWGczQVdjY2NfOC12MVhXcGNoOGNLVklXc3JsbzBoalZmYWNfMXNaZDJfNk1wOFBNVzhJNUM5NWdDbGU0X2pRZ0MzaUF5SUE?oc=5",
+   "source": "Patch",
+   "time": "2026-11-20T22:45:16+00:00"
+  },
+  {
+   "title": "In its rush to upgrade air traffic control, FAA risked causing \u2018excessive disruptions'",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZndhNHpfVHE0LWg0dlE0dF9nQURTZl9GRE9pbDJnUm5DZjZWQkp5OGhmbEptMWZWUXl4bGZVWkYxUG04b1F4TS1WYW5TMzMtVDFQSzh0MnhNTm55ek5fQnhKZnNVamNDUzhrMURqT0Z0R0tZeDhxQnY4SWxJblNOYTAwUHpDX1AxaG9QUGpUU0lGSGVvbGxJY09RX1UzanF4Wjh2T040dmRvWWdueERPTExvb3JnTkFtMkxR?oc=5",
+   "source": "Scripps News",
+   "time": "2026-11-20T22:42:14+00:00"
+  },
+  {
+   "title": "Thanksgiving travel concerns rise after rare nationwide FAA ground stop",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQRksxUFIwd1ptYmFjdE93ZmdGcnVHc0dOVk1MMUJjOFBoRjVHRURkdlQtZ013TDFIeXRIZGV4R1h0WHN1dlJ6RExrVTlYQ0pPUWFXS1hFUXJHLVlUcVVEUDZYNTZEZW5pUi1UY1pWV2c1dUxic05UMWJGeUoyUWc1bHE3Vkc0NDNrTUM5djNzQmY1R3B4STZjQkl0bk1BbFNvd1FRbWRHZHJlN28?oc=5",
+   "source": "WTVC",
+   "time": "2026-11-20T22:41:11+00:00"
+  },
+  {
+   "title": "MIA expects record Thanksgiving travel as flyers shake off recent FAA ground stop",
+   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE51bHBzOTFvc1Ffd2xsaWFXQnQ3ZHZKNVNBbmY0SFpNV0NlZGc2NC1zOUd0YUpXM3NrRmtBMnJjNnlod0dBQjlnT0VzWTE1MHZac2tjdEZMcERrZ21CeUNmbE10NTcxdV9nRUNIaWdqVWZEcG9tZXNIaU5B?oc=5",
+   "source": "WSVN",
+   "time": "2026-11-20T22:39:05+00:00"
+  },
+  {
+   "title": "Some travelers wary of flying for Thanksgiving after nationwide FAA ground stop",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNLXJfenFZTTFPZEwzVVE1VE85UHcwZlJCMjJaRnA1M2wwUHA0aGVqQnVYQ3RkdkdNN3BHTnNLX0xBYTFRMFRqUDNSTk8ydG9HcTdTSWg2MmtWUWVCQTU5UXl5Z2x4d2lPbk1Id1REUmtOSHQydFRtWHUwanRYNGlPXzVxQkJqQXdYU1BOU28yT2ZRRHh0aWM3bTZyYzFrV2c0RGZ3ZmJMdk9laDRCZ0prb0dLS3VqalZSZGc?oc=5",
+   "source": "CBS News",
+   "time": "2026-11-20T22:29:00+00:00"
+  },
+  {
+   "title": "Holiday travel jitters following FAA ground stop",
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE13a2ZFcV9EVVcxVm04R2ZMUmVRVmlya3BJbGk2d0RCSFQ1VWtoSjN3TVVuQ0UzMlM4X0JjeXBEWWtWeXQxNmpXQlBzYXRBYTdzVS1YcENlZDJxN0ZBWmo00gFcQVVfeXFMT2h4TTV2UE5jMjdpQ3d1ZkhrNk5MRTloWXZFQ3FUdmYzM1FjMF9aZWJWMGZHQnZpNVRXWVA4TEotZVE4bVMtMTJjdXpkMkE1bU0yb3dxdUY5TFgtYTk?oc=5",
+   "source": "Modern Ghana",
+   "time": "2026-11-20T22:20:00+00:00"
+  },
+  {
+   "title": "What to expect from Thanksgiving air travel after recent FAA ground stop",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOeXNIT3VtZ2xkR2ZDbDF3TThZbE5ldEpDNmFqU2xjN1duZXZlTm9OeXVpOTJVTDB5anJOZWVfWXc3Nnk0X1NRLUl6R1dYTVJZQXJRT3E1Ukl0WURySjVnVmJ6WmNSOVVkU0tZTTJGaHpQUVAxRXFydk85RjcxbGtPc1V1azFMWUt3dUhpazZRakNvc1JMeWZsNkRrNW1HblU4U3hOMG1n?oc=5",
+   "source": "CBS News",
+   "time": "2026-11-20T22:12:00+00:00"
+  },
+  {
+   "title": "Video Is travel insurance worth it after the FAA ground stop?",
+   "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBqVGNSWkF4OWUyYWlxUjBHOEViem1NTXZfN1Nhbmo4NEdqUWZfbkdiTjROQzBGWWtiXy0wajcwb1BvQThHOE02WWFzRC0?oc=5",
+   "source": "ABC News - Breaking News, Latest News and Videos",
+   "time": "2026-11-20T21:56:03+00:00"
+  },
+  {
+   "title": "An FAA Outage, a Bronco, and Reflections from a Week of Attention She Never Saw Coming",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQbHluOXFFVWd2WnFMRTFmWnlMS3V6NjlCU1BLQTVPMmVHd2VDcmNKYnZ2SFB0MW5WREt0OFlzendDTm1PZXZUTUplTUFjNzNDeHZFZi1OMGxhb3pScjFuaWlPTzNDc2ZsUTltNl9mQmg3WWNqRElzdGZiN0REUzZXdUJuWUJJa1FHUXRxYUxhUk8yVVdsQlEwX0Npc0hnSXhqT0RV?oc=5",
+   "source": "Ford From the Road",
+   "time": "2026-11-20T21:51:38+00:00"
+  },
+  {
+   "title": "FAA Pauses Installation of Gear Tied To Messy Flight Halt",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPbHJ5eXlkakZTLXQzYXdkV1N3TmxIeDFucEF6Z09VZ1UyNFdSWmZlYWtVSlEwcG5oZWg3YVpXd0RUT2hXTElFN2c5VHdPa1VMeDVpOGloM1UxVUJpMl9BalN0dGNrUmx6T2h2Zm04c2g4dGthcm5XV3FUSkEwZGhKRmwyZ0U2UnhTcUdtWjF0OFZHU3UyS3NzYWtJVTJfZGVWLVo3Y0lpam9lQllsZjAyN0lrc29PVEdfMkpTOXhQUkVOT2ZFVFJadmlGdDVyLVV4Ukk3UEJPRG1LU2dHNnktRHU0MUJyMG8?oc=5",
+   "source": "Aviation Pros",
+   "time": "2026-11-20T21:40:25+00:00"
+  },
+  {
+   "title": "FAA Narrows Cause Of Nationwide Outage, Congress Questions $50 Billion Funding Request",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQVHJuNFJCeTE5SmRPUmt4MEVna2sxYnJZbjdPU29GRmtMWnpta2NCUF9QSXY2OG5LZ1RhMTZJd3c5eDNMY2xyd0ZacXIwNnNwbU53OFRzYzFzNExrcTJNbkdTd3puRUJBb0t5elR1R19kSjVKQXFPazB4ZEpPaTF3dW9Ic0JzbmR5ZnRvZ1Z4a0hZeHNoSFZkeG82VVc?oc=5",
+   "source": "Investor's Business Daily",
+   "time": "2026-11-20T21:34:00+00:00"
+  },
+  {
+   "title": "Trump replaces US cyber chief after outages hit flights, banks and NSA",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNSTB5N2hZT0QzVkpZVWQ5R2MxOVNJN25kRGxIUFd1OGx5YTE4YVRSMWV4NHoyZVI2N0VEY19vQk42SjZObzBTRWRMam9CaTJhYUJuZnMxMXBGV2dVaWVEeDg5Nl96OGc1TFNrRHc5TjRPcVFFNF9PV2FWLU5vRnF5eHF4NVQ4VnZrcEtyU1dzemJfS01KRFZZLTRnRDJSbFR6R2dQWXQ2LWZvWExzSGxiM19HdlRpVjlkYTh6UjF6cWXSAcABQVVfeXFMTWRxTHR2cDlkRWVYT3NyX3hYNkVtNVhtTHh1aHd4TEplYnZHWHRQbnR1cl91Q056LTAyaTJtOFo3WFFORm50NFY3VW5KYnE1Nzh5Rmswb1RsSlpFNXdYQzlCVGhCWVNLTmJsWEUycUZpWHU0WTZGX28tTTcxcEZJRmtBeXYwRTgyT1lRcGZvRG9yNll4TThkSnpUSnhQS0J3a0M1TzNtTFJrZWRLLTZGVFVldWg0VWZxNkRyeHJreEh6?oc=5",
+   "source": "South China Morning Post",
+   "time": "2026-11-20T21:14:04+00:00"
+  }
+ ],
+ "errors": []
+}
