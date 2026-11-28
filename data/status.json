@@ -1,0 +1,304 @@
+{
+ "generated": "2026-11-28T19:31:33+00:00",
+ "assessment": {
+  "level": "elevated",
+  "headline": "5 ground delay program(s)/closure(s)"
+ },
+ "faa": {
+  "updated": "Sat Nov 28 19:31:27 2026 GMT",
+  "ground_stops": [],
+  "ground_delays": [],
+  "delays": [
+   {
+    "airport": "PHX",
+    "reason": "VOL:Multi-taxi",
+    "detail": [
+     {
+      "type": "Departure",
+      "min": "16 minutes",
+      "max": "30 minutes",
+      "trend": "Increasing"
+     }
+    ]
+   }
+  ],
+  "closures": [
+   {
+    "airport": "LAX",
+    "reason": "!LAX 05/277 LAX AD AP CLSD TO NON SKED TRANSIENT GA ACFT EXC 24HR PPR CTC ATLANTIC AVIATION 310-258-9884 OR SIGNATURE AVIATION 310-410-9605 2605271826-2705281600",
+    "start": "May 27 at 18:26 UTC.",
+    "reopen": "May 28 at 16:00 UTC."
+   },
+   {
+    "airport": "HNL",
+    "reason": "!HNL 11/427 HNL AD AP CLSD TO V-22 VTOL 2611261248-2712291800",
+    "start": "Nov 26 at 12:48 UTC.",
+    "reopen": "Dec 29 at 18:00 UTC."
+   },
+   {
+    "airport": "SAN",
+    "reason": "!SAN 10/004 SAN AD AP CLSD TO NON SKED TRANSIENT GA ACFT EXC PPR 619-298-7704 2610011633-2701010800",
+    "start": "Oct 01 at 16:33 UTC.",
+    "reopen": "Jan 01 at 08:00 UTC."
+   },
+   {
+    "airport": "LAS",
+    "reason": "!LAS 10/160 LAS AD AP CLSD TO NON SKED TRANSIENT GA ACFT EXC 24HR PPR 702-261-7775 2610281926-2701272300",
+    "start": "Oct 28 at 19:26 UTC.",
+    "reopen": "Jan 27 at 23:00 UTC."
+   },
+   {
+    "airport": "HNL",
+    "reason": "!HNL 11/428 HNL AD AP CLSD TO F-35 VTOL 2611261248-2712291800",
+    "start": "Nov 26 at 12:48 UTC.",
+    "reopen": "Dec 29 at 18:00 UTC."
+   }
+  ],
+  "other": []
+ },
+ "news": [
+  {
+   "title": "Weather and Traffic Cause 80% of Thanksgiving Delays",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPSEpIc09rWlZZM0t2aGg3YmRLbTJBSTNvMWpGU0FJX3V6dGlTYkdJcXhHUkd6b1Q4VS1nOFJfV1U3dVI5UWEyM1pPcHBjcURZeUFoZ3JhR1o4X3N5Vl9KMGdMcGxUQjRXRVdscGM2eS1SQjhpdHhCUlBPWDZFNWhvZVN5SmZWZGFNWk1Va1g0OEFqUQ?oc=5",
+   "source": "Wisevoter",
+   "time": "2026-11-28T19:03:26+00:00"
+  },
+  {
+   "title": "Sean Duffy Reveals What\u2019s Driving Thanksgiving Flight Delays",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNWTBjRHZVRlZYcmlVRm9QcU1RcFg4dXN3eVpmZUk2OWNQRGN5dV9LbTZ0LVM3RVNWRklWMXlYc08zVlBCR0hORXBIZVh3S2hzdTNCQnRFUkF0aF9aSjdUVFVhQnZCb1JKRkdyV3d1YUpTUXkzbDBBLXJfTDFvakNac01YX3NCNm5tc1BFZ3ZDMjU4QWYwYWVqdg?oc=5",
+   "source": "Newsweek",
+   "time": "2026-11-28T18:29:00+00:00"
+  },
+  {
+   "title": "FAA data shows weather still drives most U.S. flight delays",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPeWxuMjRfZWZpNDlHVlFBUHNCZGxCclB2WG5MQzE1Q1QycEh1S2xmZ0d5b283WkphR3dxMmQ0Y1BEQ3cyNDRGQXNFbnd3Mnl1SEtzT3dVUlJlQUR3eWJXeDdZVUVGSVFfVXdfTVA5YVRYM2lsRW1rWVhLeWVQalVSUXlCQWZUNmFSaExYRGN1SW0?oc=5",
+   "source": "https://www.thetraveler.org/",
+   "time": "2026-11-28T18:07:39+00:00"
+  },
+  {
+   "title": "Thanksgiving nor\u2019easter exits East Coast, but travel snags linger",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPR2FSeW5QWFc4SThTMkdKaVVsSXFOUFFyU2FoZ0szVHVtU3lSclNkVHUzZkdpXzh2SDVxUkFCbjdvaDlsSE93b2N6bXJwNjN2NmIwZlAtQVZrQk5pMXRfRXpDbmJ5ZFVPbGNlSTJTZm5HOWZXLW91UTdkT0NINDVRb0diRmdWdGFhMU1ldzBzeHpkQ1dHZFpz?oc=5",
+   "source": "https://www.thetraveler.org/",
+   "time": "2026-11-28T18:07:39+00:00"
+  },
+  {
+   "title": "America\u2019s skies reopen: Duffy reveals what caused nationwide blackout",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOQWZ4Q1NjWXRXbjN4U2FnTUU5Qm5zOUR0cGhVbE9yWkJ1dTRmVVJVWXB3eE1fRXFwMDNqc0thQVZWekVGNHNDZ09rUXVSSUZHMS1JcVgwc2hIMXQ1U3d1aDhnVkYyMllCaWVJQ2t5ZG1IODh4LUxvbjRNM0ZEbW84S2l6X0NtMl9mRHlHVXVNWWMzVXpoMkNTZDdoUjFnY28zNElKNEw1MA?oc=5",
+   "source": "Todayville",
+   "time": "2026-11-28T17:24:29+00:00"
+  },
+  {
+   "title": "Wingtip contact between two American jets delays DCA departures",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPU2Q1SlZmSW5zTVotRDFnZ05veUZxTUFqR1lURnZ0emt4d2U3WVc0UU5aTkgzZ0tLNzM5MC1CMl9nT3d2NTAxaGFNUGRXZV9oMTllektUMWRXNzJIREdoOXdxZWUtb3hSUEFJd0tPcEtESGNmQ3ZldjAyT2U2Vk5jS0o3aXlJd1BreVQ1d0lqREMxVmlyMVE4?oc=5",
+   "source": "https://www.thetraveler.org/",
+   "time": "2026-11-28T17:17:39+00:00"
+  },
+  {
+   "title": "FAA data: Weather still drives most U.S. flight delays",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMWRTc2NERVpxU0RfdmtNeXIxQXhLWnMxTXprTXhkVXFjVTA0Mi1qQmx0NFhYa1ptVENSME1WRUgxVFBhVDNGNEJ4c3F1NGVFcy1HYnZXSFJlTnZBNkpsbFRPemgtekhWbDg5RHFDVkRYdUNTamI1OG5jMDFtNHl3SXl0Wkd4b01i?oc=5",
+   "source": "https://www.thetraveler.org/",
+   "time": "2026-11-28T16:02:39+00:00"
+  },
+  {
+   "title": "FAA data show weather still behind most U.S. flight delays",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSkFoMkw0OEhfVEpySW1pTDNKUWtBR2tfUlFqbk1oSlZyRXVSLXVYOS1jTjh1OUxHRmlyZ244YnZ2TWhhcEp4d1dUeGVJdGtGTVV3UGVreTBudnVLRzF3Wk1vNEdZeVRpYzRCWFFvdnZtMXc1LTBLbnN3cEZtVktuckFZMkpZMmxYLTZUMkpHSQ?oc=5",
+   "source": "https://www.thetraveler.org/",
+   "time": "2026-11-28T15:42:39+00:00"
+  },
+  {
+   "title": "AI 'Bombshells' Could Expose Banking, Government Secrets",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNMldYVGpCSWVPVjFxdFJSOEJ4Tk14RVktaVJLVTI2dkVKSGZ2TjhGYy0wbk0tNmN5WnRMODJYNVhVcXFjQWtlbnVqUmVLZWlnOTUzaURZOHBuWXRSQ0hUZnhPNGJEd3VLYUU2MU1aZWNBLUhIY0dQSFpOWU45RDRYLXN2ek1Td2hCRU1iTEFuU3NSbUpNd3VvTkF3?oc=5",
+   "source": "Newsmax",
+   "time": "2026-11-28T15:23:59+00:00"
+  },
+  {
+   "title": "FAA data confirm weather still drives most U.S. flight delays",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPejBYb2dZZ2pTSFFYeU1LYkRBUVNsVDRacmVwVkh6azVmWFlnRVgxNHg4emw2dWxQWThGVHRsRWdJVVFtenZqZ0hjVElZSFg5RHgwVjhrbE1QVkNXOWlrSFNaT0JwR0w0U2hKM0JuODhqNmpBajhLWHBVWGxQTzBWSlYweGJYZE9XUXllQWlCdXVpanc?oc=5",
+   "source": "https://www.thetraveler.org/",
+   "time": "2026-11-28T15:22:39+00:00"
+  },
+  {
+   "title": "FAA data confirm weather remains top driver of U.S. flight delays",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQYVpsMHV0NkNjd1AzY2dpbHZBTlUtYVR6NGpvU3JfVVZjOWszQmpnS3ZjM0lEWFluQV9UMlN0VWJCOGl0c0hWeUFlcVNCQm5QWUF0dFcyRkRlaUFhZVVuME9uSHB3T09OTXc5MUhUTXhYSk9nSTNTeFJia1ZCeloyZ0ZMeEJPeUVwLXdyS2hUNWpMQmg2SG9OVQ?oc=5",
+   "source": "www.thetraveler.org",
+   "time": "2026-11-28T15:03:19+00:00"
+  },
+  {
+   "title": "Delta restores weight system after tech outage snarls pre-Thanksgiving flights",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRG90VHY2U0FxSjgyQmpRRENmTHZnVktsMUlHRGxoY0lnXzlqdWZ4MTFUVl85WFZyWHQ1Y2R3RUZ0clk5STdqd3lIZDZacG5QSE5IM295RS1fSFNCRllIcjEzak1QUVZmZzRVN2lvdG4tM215RkVDTkF6VVJLLUlKMGdZQjBDWjRJOXVrd2dBS0VmVUFjNVhSU2ljemxNLTJQb3lsTGQ2SVUtNWs?oc=5",
+   "source": "https://www.thetraveler.org/",
+   "time": "2026-11-28T14:42:39+00:00"
+  },
+  {
+   "title": "Delta restores weight system after pre-Thanksgiving flight chaos",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPbS1nLTFKUS15YjdHc1pSZFAtMU9RV1RseGwwelE4a0JMVjV5SVNzYUtJT2hTdTI0SFdiWkVQeXBMM3NjbXFCOWRxbkc5V0plblhFbENvNGh5alpkWmU3WkZzRHl4WFNpVVF2dVFCWXk0ZUpxcGlIb0pwWHdNWkNUU0VpNUtnWnR4SXVCVkJFWDlId1N2dzlReg?oc=5",
+   "source": "https://www.thetraveler.org/",
+   "time": "2026-11-28T14:12:39+00:00"
+  },
+  {
+   "title": "ICC: Employers can pay disabled people pennies on the hour. Indiana is moving away from the practice.",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQSmFwbW5qNlNOTXhGVjFManNRTy0zTm9ZNHhiYkgzM3NFYjRRNnNJcjAwM0ZpQ1BUSEhoZ3c5cXAtVWhObFZaN01aa3FzX0YxeWw0cHZ5cmxSY3Fxcmp3dFBiSXNnUEh0WV9iRDFCZC03WDZ4SmlsQURTVS1fNE1ySjJCdVBzTGVTMVUwT2RkWEFMVFo3NnE0X0NQM0dDTVdtQmt6NFEzRnQzdzFTSS1HLUE2Z0NWczl2MUd3WjNPTFFBeVU1VGFJdmVQWk5MdjFzbGZ5cXROcjNHMktYZjlaNERTU3M?oc=5",
+   "source": "Ball State Daily News",
+   "time": "2026-11-28T13:00:37+00:00"
+  },
+  {
+   "title": "Tired of Sudden Outages? Your Go-To Prep Guide for Everyday Disruptions",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQcC11dWRsMXJEN2VZLVBBVmc4cnNELVZ2bHEyLXJMNzB1LXB0MHI4WnN0bHlRMjllejBoOU9KaVVsYnJhVWF4cG93VmdvMUFaR3VzQkpzTDA1RXJHRWpaeFp1WHNMY2xFek5fZVNla3VRejV5cGQ4VmVkWUNjUDBfQVpkc1MtZjllU2c?oc=5",
+   "source": "CNET",
+   "time": "2026-11-28T13:00:10+00:00"
+  },
+  {
+   "title": "White House replaces Sean Cairncross as national cyber director amid widespread outages",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPV21SVE4xdl9tTTF0ZERibzg1d1ozOGY1WUM3elpkaHl4SjdLYWxMQ0FhVnJKYzFsTDlUUUNiSTVoYl9scVhzWThNaUU2ZGRsYUFFaVNTQXNzdmdfM2R5cmxaMHhIdUdMUHVTYjczYzJkQnRYNWxFSnMxQl92Y3gtYTIzdlhtTm96RmVJVjltcDZsSEtxU2Z5X1JmX0J4NmFYWi1NTmxKMEhrNDJ2V2VoVXRlWXcxTGhoVEo2NV9Fd2JIbEYwYjNLRXBRR294NVFNUmR2OA?oc=5",
+   "source": "Scripps News",
+   "time": "2026-11-28T12:32:24+00:00"
+  },
+  {
+   "title": "Three days in the dark: How prepared are we for the lights to go out?",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxORkdhV1AydXcxR1ZHMk5kOG9iUmFYbUw5ZU1VeGdtYnBxMmhDMEo0REZvTGZybnQ2VktXS0NERVZWY1lNR1pmekl4NE9sRko2NlFNMTRsMnhURHhPZHVieHRSZHBUQ212Szl6VWRqLWM4Vi0yVDNFTUJPWk1VcGFib2FfYVhRbUc4ZkNfd1V1SjBkVkZMeXdj0gGWAUFVX3lxTE96aTJSTWlTNkV5M3hudHdfaFV0U0pLNk9OQ0lMMzdCbzlpeHBjWkxIdl90Si1ibEFqSVE4eEMzOFZ0bG9aRkNXcFJYOVB6cXJXMHoxQ1Q3T3lKdzRqcXJnVFNKVzVhXzVocTRQT1oyV3lBSG9Gel9LM1Y4SmtaNVpLVFk1RFRHTU92ejR3NnlLbGxuV1dpUQ?oc=5",
+   "source": "Modern Ghana",
+   "time": "2026-11-28T12:14:00+00:00"
+  },
+  {
+   "title": "FAA data confirm weather as top cause of U.S. flight delays",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQUTR3eWdDdEZGZ1NESVlnTWVuQmR0RlNoTGE5X2psYzBxYnZPOGNGRkI1UTNWYmVQQ1c0TVNRYU5WRm53eTlXN0xfVGluU3lpY29xVzV1WmZ0aU9HR21GUUJQcHZZSnhZWFAzRENLaXBoYWJvTjFVdWpjTDJraEdUNUEtM2VjblYtWmJPN2hnNkY?oc=5",
+   "source": "https://www.thetraveler.org/",
+   "time": "2026-11-28T10:22:39+00:00"
+  },
+  {
+   "title": "Delta restores weight system after outage delays flights nationwide",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQdE8zSlY4Zjk2MTJyRHcwM0t6akVmLV9DYmpabEJWSnJsUk0yUGlqZkxjS2xTS2JiVUtRUUZuVUF3TTBZbEdKQURIX1dPWWdkNUFMaEtrU3RCcHpmSkxuSVpoOVRiazVKalV4SE8waWptSTZ6MUx5eEd1d1k1WlllNU1yMElLSXg5VXBzWVdTMlQ5d0s4Z2RJUGxXTXE?oc=5",
+   "source": "https://www.thetraveler.org/",
+   "time": "2026-11-28T10:22:39+00:00"
+  },
+  {
+   "title": "GPS Jamming Hits Nearly 200 European Flights Amid Spoofing Risks",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNeTUwSjFveVZpLTNCcWVYT0t1OTNnY2JLRFlQd0k3UExZeGFuWnJ4MnJ6VmtRLVFFRDRUV09DYmV6WHItLXYxNDhzaVhfeWRtYUdmTVNUT2Y3cHdGcGpLRG5Zak5HVlRfbmRoMUlmZ2IzTE93aWlpR0VzMjJPQnJDNXF2bWJoR3dvXzVxU1MzUDU3RGVza1BjMnZIcGZNZTQ?oc=5",
+   "source": "https://streamlinefeed.co.ke/",
+   "time": "2026-11-28T10:18:00+00:00"
+  },
+  {
+   "title": "American Airlines Jets Collide at Reagan Airport: FAA Investigates",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNTnljSGU0b3dUU1ZuTVJudkdfNzQzc21GSkkyTTNqdlhnUXRvRUFKWUtnb092Sk5CT3R4SjY2S2syME1WdGVHVEU3WWhNTm5JTVRpNWp5UUh5MG8xWk55Q19lT0J3dFhwQmktbk5tRUxnMDJtYnZXVzZtOTQyTDktc2RvMFE4YnAwOGExOHk3REYwaEV5anlfRldoclhlQmRWcjc4RVZRSGNKNlZZb3JSU25aUWJtSVVsdThRSnlUZkdFQ2VCSzln?oc=5",
+   "source": "Travel Tourister",
+   "time": "2026-11-28T09:11:24+00:00"
+  },
+  {
+   "title": "Delta restores weight system after Atlanta delays hit Thanksgiving travel",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOaV83TVVXVy10QmtvdDJrYVNrb3dlT0g2TVhLamw5bEZiSXV4NlV0SUxYX1dTRHhyUERtZHNhYUhYQ1VSZTFmX0RwcXpsYkdVMjk5TUVLMWR2WGtNM1BCMzNCcEdILVhxZjByZGNDZ0I3TUcxSlZuQTRUVDhYdHBkbFBKQ2xvbkFrSEpQaDRmeVB6SWhLb1hzd3d1Zk9rR2tVOFNwbFBMMA?oc=5",
+   "source": "https://www.thetraveler.org/",
+   "time": "2026-11-28T09:02:39+00:00"
+  },
+  {
+   "title": "US, Italy disruptions expose urgency of Nigeria\u2019s air navigation upgrade",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOQ05DSmFra2VESjVqQXJQV1FieEdBNWY3QmtYSG8xQTFLamZ5VDF6YllJWnBrUXYtakl4aTg2Sm5ZOXB6Qkk3RVNfeFNXMk4tcl9rTVR0RlVKNkZDM04weXFkLTRSd1l0a05wZDFIUXdFZFlmTG40Vm9FU2luVDNQUzNYSGhkamZPTXl5TC1zcEVQYVlOWWU2QXc3Q2xENzlpaDdCM0owdWR3clHSAbABQVVfeXFMT3M1QmVhYWlybTE5RVN6S3R2UzZ2T2s5QWNDVnlOMHF6bnR4T0hVZDBQVmpObUxKamN5VGlhN1BrQm1MZ2FocFR0LWotSGVMWGNFWF9XbkNDLWp1N2NhTm1PSUk5Qkc5M1hGM1lPRU9TdWJWNWlRaU9HRlFxZDN3SUdRbHdUWS11emZTM3lPcU85YmZldGFsdUdvVmNiTTd2akFGa1lXa2Rwa1IxTnhnNUU?oc=5",
+   "source": "Vanguard News",
+   "time": "2026-11-28T07:12:38+00:00"
+  },
+  {
+   "title": "US flights stabilize after Thanksgiving nor\u2019easter and FAA outage",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPQ1BEaV9Uenc5d0txdndFUUVNb2JYU2k5MW9Md1VPR25TSkE3ejFZVmFkb0VXWkdWTXhnTWx4QWhPN1BvWWkyNHNSMVd2M0M0MWEtY1QwME52ZlBTLXVsTVlXaGxicmlMUGhUVGZMeFE0WnlHVlZ4NE5Ud3k1cnllOGZacXpMaXI5azZwZzFjQnFtc0QtZThBOA?oc=5",
+   "source": "https://www.thetraveler.org/",
+   "time": "2026-11-28T06:32:38+00:00"
+  },
+  {
+   "title": "US flights steady again after Thanksgiving nor\u2019easter hits East Coast",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOYnI1M0FfSGlmX1NKM1dCVWplY3RWV3pMYjE1SDhrdURPdlB4Q2NyOVdHQkJ2Qk51a25UQmRVb25NdDRCUUxCTmduUlRWUi1rZFlvclVjZUdabmpRbjRrZkhUc21PeHJ4SWJmLVdFYko0bHZkTkF2SU8ybTMyZW1ZQm5adEdvUUs3R0YwcWR3SWVLSHVIRVFOSzdNb3hMdw?oc=5",
+   "source": "https://www.thetraveler.org/",
+   "time": "2026-11-28T05:17:38+00:00"
+  },
+  {
+   "title": "Thanksgiving nor\u2019easter: U.S. flight operations stabilize after East Coast storm",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOVUlycU5Vd1ZnWnBBYkVlRUpyQXFOUl9OWl9LZDRuN0N4cW9FQk5tMGVDLUF6ajZxUThna3FDdWo5UzV6UTNwQlk2eUJYOHgwRmtWbE5GaW5NTE1maC1mZEl2WGIxemZ4OVRNVmRsZHl3MEhQWG05S0JKazRWalpxMkNZSC05OHVMTnNHU2d4OHRNeVB5amQ2b3lBWUE2VDB6ZGpPUjgtNm1pUQ?oc=5",
+   "source": "https://www.thetraveler.org/",
+   "time": "2026-11-28T04:57:38+00:00"
+  },
+  {
+   "title": "Two American Airlines planes clip wings while taxiing at Washington airport",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQeFZPZE5HejYxTXJ1NEx4TzBUcXgzRklveFpGQTJ0NTVlUDhvQ3NWRDN6bmlCWDV2LWpMMnRnbGgyMWEwbzJsaldjVmw1N29oRXBYRU13SUFTSXMyOHRROXVRb3NORmZkNVg1M2FhTjlqLVdRU3czUjA3LUl2YjZUaG9oZ0VoUm0wZmNuZkFZNXZYSUZlNzF1MTZ2dVhUUnR6R0M3SjVKRC1xcmEyRFFWdzhwa3Z6Wm85RE5KNmNOZzF2RTRBZXllMDBkRHhMSnYxZzZzd1pTSdIB3AFBVV95cUxOS2J5Vzc1YWRSaklrdDZyVGRFSTBVT2FkSDNMamY5YVMwcDZJQS1rX2hKSnB3QTU0blVDeklTRzBnQmhzWWhTMGhBSmgyMk9ITEhrNlNSTHY1MF9RamJrQjdJZ2dKaEtKTnpyUDN0bmJHZmt2RVRmbjZkYURQZWpuRGlPZFFuNzBIV01sb1gyTW1kelJiT2tueHlsVXUybWVYV0J1QXY3UWhXdGxia3BFdzYwMTh3Zy1DWC01VXBOWEVyQWpydURDek5fWC1nVHNyS3AwOG5OU1doS2hw?oc=5",
+   "source": "Business Standard",
+   "time": "2026-11-28T04:52:13+00:00"
+  },
+  {
+   "title": "U.S. to Europe Budget Carrier Grounds All 12 Jets Over Cash Crisis",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQTWtJdkEwdDI0V1FSMHZoM2MxMll4TEJKeGJDS0JGeG51WC02THVLbjFkdnF1bHZib1FOVF9FY01uN0x6Xy12Vk5rU2ZKekVhS0pfWFdtZzNJV25pM0p4WVJ1LXhfcm5LWC14OHpFOG9RQXgwclNUYnJ5ZDZxR21VbVNObk9BVENYMDltdVViOGJPLS1iN25aVi1EbFhKTG40aEdKeGVIY1R2Q0kwbEE?oc=5",
+   "source": "https://travelhost.com/",
+   "time": "2026-11-28T04:03:00+00:00"
+  },
+  {
+   "title": "Storms, tech glitches fuel delays for 2026 Thanksgiving travelers",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOSktES0g2SFFSWi1vVnZoMngxaDRZWEticFRJNkJIZF9UdnVrYy1MeENMa3NLMURWeGd5U2NzSU5OYW5TdzNRNTh2OGRJeWswVklUb1JRZ1duOUtQb0FZdlBpVWdSRTZSNl81dGdZcmktX3VSWjVfdjFtSTZWeENYcnBleGtaQVk0UWZnV0s2NENSWW9XMktxag?oc=5",
+   "source": "https://www.thetraveler.org/",
+   "time": "2026-11-28T03:47:38+00:00"
+  },
+  {
+   "title": "Two American Airlines jets clip wings while taxiing at Washington Airport",
+   "url": "https://news.google.com/rss/articles/CBMi6gJBVV95cUxOVlNUY1ZJcGtaR2pQd1dxa3JmLWwzVU9NX05wUmdybWZTNDN5WHh1aERnWmhEcVdrc2UyaXctdHlxd00waUVhTGRVX1BSSlgtMnpWaFR1MnRDd2lTNXNPeEpIY0NORUN3LU9Ed1M2d3hfN0o2N29WWkxCa2tkVjhpVGdGazZnSzBTemhQazZiUnJyd19GMk1BLXhXay1BZHNlc1ZRLVRmNGEzdDVvS29XanE5TnpyTWtOTEVPbTFNVDk0RmV4SVhUYWF4c3k2X3NtbDlTZVdIc1BGeTlGdTFyVWF4STZUMmEwRm1nS0ZqM25MM0tnNm5NSzMyNmtMVzBVcjlzX2V4V2JZWlFBMzRROVpGaHEzUUYtY0JpY21pZ2JEUVBqNWx2XzlQZjAybl9xOHlCeTExaG5hNjctMlJuV1hwdHVHUm52T0tvZ255TmN3V25Kc0Vja3B4dDZZUFpXUkhTa0UybDgzdw?oc=5",
+   "source": "Dailyhunt",
+   "time": "2026-11-28T03:37:18+00:00"
+  },
+  {
+   "title": "American Airlines planes made contact while taxiing for takeoff at Washington, DC, airport",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMmdlTC1xSDBQM1p6TVFhVEpYTUZsMjFSdWxsLTF1cmJEelJyS1I3LVJla29paGpDRUlId3dka0xvVEE1emlVbzZ1UDlZZlVlRS1IN3c0MnNxUHdfZHhaQ1dlTHlVZWc0c25GbDllV2Fxc2tBQ0EzRE1Pam1NWkVEbTdsR0s?oc=5",
+   "source": "Yahoo News UK",
+   "time": "2026-11-28T03:20:00+00:00"
+  },
+  {
+   "title": "Power outage: Police step up security, traffic control in Tawau",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQNkR3bnBtc3NZZ2RWbllhMjJ2UkhzUWI4UGRDYVp2bmkzdUhsMm5vS2xEcHVoYzlvSE0wckh6Y2ZWMXBwcEtSZGdaQnJZOEJVWWFDVU53OXBoTFpRZXVVcmV6LXU4c09uclRKNXFDQ3FQOHhTSmpKQllWUmlTVGhscWJuS1hRd2hodnpVRTdSQTZ0d1ljUXRyV2ZPMGVad3NtMVRwMGxNS0VqSDVw0gGyAUFVX3lxTE9UVm5zeG02alpuRTFVOE1tVXBSR2l3UmxJamE5QlZLVl9FZEFXd2Nnay1CV3ViTW9VN0J3WEVKNmo0Q0NNZzlfMmdZZjhqa1E3ZW5TTldpcC1VLXFxOGphUUdwbTlvcDQyOFRjZkV5WmRVbFhGUEhySjFyQWFFaVhjMUpJaDVKOW9jVFlyNTBMVUNnMTV1VnRTeFBRWlJTS1R3OTJMbVJpSkEzelpiZTJTMlE?oc=5",
+   "source": "NST Online",
+   "time": "2026-11-28T02:43:38+00:00"
+  },
+  {
+   "title": "Weather-related flight delays ease after Thanksgiving storm chaos",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQS3psUkNsNnNNcGxSZ0hQSGpiOS1BYXdHRW5EOEdkb0hpVTY5Q2MwZjBiRlF0N0dyNVNyaEtXdFdSMkxxdjc2OUFtT3d3N3g0aDNXU3lwalZjLS1pcWlPWXBUdzQyRkN3OTYtZGdxS0d0ekRiNUl4cEFoVmd6YmJ2eUhLajNZQzVLalJESzgyRFBMR3ljei1HcndR?oc=5",
+   "source": "https://www.thetraveler.org/",
+   "time": "2026-11-28T01:27:37+00:00"
+  },
+  {
+   "title": "US flights slowly recover after Thanksgiving storms and FAA halt",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPc1JSQnNfT0xmWEdhRW54anBKclF2Uzl6ZzNDRHdRbjVnM1FDcHgtLTdCRUxlSThvTmdyTnZTeXcwUl9nbUxXTzlYTjRzUDJ6S0tDc0sxQlc5LVJHb0RPWUFGeFhvam5jV1F3WUN1YmNFaGZnSHo5TkxzUTY4dHJsdm1DWjk3X2dsd3dXWFJZYlJDMmJfMzR4aw?oc=5",
+   "source": "https://www.thetraveler.org/",
+   "time": "2026-11-28T00:52:37+00:00"
+  },
+  {
+   "title": "Delta tech outage delays over 1,600 flights ahead of Thanksgiving",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNVFZrZzZEdjBodjh5b21Uai0wUUszVUdBSUY5eVJSbnEyeFFoQ3MyOWFVNFRiOXN3YXVnWHRhLWRfQmNadVBxMDVHeW9LMWMxdk8ycjVaNEpWdWFZM0dURUNmNjQ2Y3pJa0w4R05rYmJZSlJVNk13V0NjeUFUUm55dWszUnN5TjJXOEtWTEY0eVlHME54S2FJV1BB?oc=5",
+   "source": "https://www.thetraveler.org/",
+   "time": "2026-11-28T00:32:37+00:00"
+  },
+  {
+   "title": "Delta tech glitch delays over 1,000 flights ahead of Thanksgiving",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNd0V0OFYxdW9UWmhWVDQ4Yllacnd4Rk40d3lsX0RQZ3prVDhaeTVPSGx3YWI4bFRIOUpXaktEX2dQek1ycVNQMmFEeUdOeTJWUDFYdWpKRDdMd1BJcGxzR0VaX1JVN1N2MWRLLTFzM2lVWHIxZFl4NVc3bURwR1B0dGFWTnpqdEFJcklJN2lPcTNrcjNRbjE2SHFR?oc=5",
+   "source": "https://www.thetraveler.org/",
+   "time": "2026-11-28T00:32:37+00:00"
+  },
+  {
+   "title": "Stranded Bismarck Nurse Buys Bronco After Nationwide FAA Ground Stop",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNRFJaRHBCX2UtYlRGcnM1MmJiV2tNX1hjckhaMkhkRHZ1NmJXTmZ2VWloQnR0aTFRTEk4T2NsMjYwOHpzUURaQjQxa0hTRVZZbTRKckhzUG55WXVTVzQyX1N0SUI1M0FCVWcyam9ubzRkR0NaOHdSTU40QjQ0WWNhUExQM3VzanVEVnR4V3hnYURSaHF2Q0wwZjhNZk1jZw?oc=5",
+   "source": "https://www.thetraveler.org/",
+   "time": "2026-11-28T00:12:37+00:00"
+  },
+  {
+   "title": "Lawmakers Criticize FAA Deploying New \u201cUntested\u201d AI Tool Days Before Nationwide Grounding",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZV9qdm5haXZOZFRnS3QtaXRua3VqbHNfX2VDZVhPUWxpWkxZbkRXeUxoR2Z1dnZsY18tbWhqTXprOGlnZDNkcldmWFFZUlo4UHlmeFdvLTF2LTNnSGZkTklPcVBnVHBZUG5tQ3BCXzZsNFpZZnNSWnRobWN3enh5NTlxMEhDckZZT1JWLWdyQW1ZYU4wWDF5YUhBd01IdHJPTkFQUWRXMk1fSlhRemQ1RjhzVQ?oc=5",
+   "source": "Simple Flying",
+   "time": "2026-11-27T23:45:18+00:00"
+  },
+  {
+   "title": "Thanksgiving Travel Week Could Be Busiest in 16 Years",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNaFpSVmlTTWpJUHdPQnFNM3FEV3NKZExYQnNRUVFsSUlRZUFZWXVWM20talhnRk1NbkpXUU9qMWNlOVpIcmttbGkyWWJIdUlQaUhaV2tld1R0Nk10b2NyYmludzdXSHoxRmFuR3l1VmF4bGtUUWFhQ05WSGJtZGRveTN4Q3FsQkgw?oc=5",
+   "source": "Wisevoter",
+   "time": "2026-11-27T23:38:55+00:00"
+  },
+  {
+   "title": "Stormy Thanksgiving week triggers Florida flight delays",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOZ08yN2hNeU5vQW1Ea1duVXdWTGxpZmtqTEhKQzFUN0Z5MGRGaTBKM2pTZUhVb1Q3LUxFXzZJQkx3bEVQNnI4azVtaEpLeWdyQ3FKVHN5aF9MbjJKR1psSG1tTGRuU3dncEZFVno1bFFva1puLXlLa0pyVlJUUHlPQlBaTk9UVFdlR0hTSw?oc=5",
+   "source": "https://www.thetraveler.org/",
+   "time": "2026-11-27T23:32:37+00:00"
+  }
+ ],
+ "errors": [
+  "news 'FAA ground stop': HTTP Error 429: Too Many Requests"
+ ]
+}

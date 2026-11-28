@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f1419">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="GroundStop">
+<title>Ground Stop Watch</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg">
+<style>
+  :root {
+    --bg: #0f1419; --card: #182028; --line: #26313c; --text: #f2f4f7; --muted: #94a3b3;
+    --critical: #e5484d; --severe: #f76b15; --elevated: #ffb224; --minor: #3e9cf5; --normal: #30a46c; --unknown: #6b7785;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  body { padding: env(safe-area-inset-top) 16px calc(24px + env(safe-area-inset-bottom)); max-width: 640px; margin: 0 auto; }
+  header { display: flex; align-items: center; justify-content: space-between; padding: 14px 0 10px; gap: 8px; }
+  h1 { font-size: 18px; margin: 0; letter-spacing: .2px; }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .8px; color: var(--muted); margin: 22px 0 8px; }
+  button { font: inherit; color: var(--text); background: var(--card); border: 1px solid var(--line);
+    border-radius: 10px; padding: 8px 12px; cursor: pointer; }
+  button:active { transform: scale(.97); }
+  .banner { border-radius: 16px; padding: 18px; background: var(--unknown); }
+  .banner .lvl { font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; opacity: .9; }
+  .banner .head { font-size: 22px; font-weight: 700; margin: 4px 0 6px; }
+  .banner .meta { font-size: 13px; opacity: .9; }
+  .lvl-critical { background: var(--critical); } .lvl-severe { background: var(--severe); }
+  .lvl-elevated { background: var(--elevated); color: #1a1300; } .lvl-minor { background: var(--minor); }
+  .lvl-normal { background: var(--normal); }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; margin-bottom: 8px; }
+  .row { display: flex; gap: 10px; align-items: baseline; }
+  .code { font-weight: 700; font-family: ui-monospace, Menlo, monospace; min-width: 3.4em; }
+  .sub { color: var(--muted); font-size: 14px; }
+  .watched { border-color: var(--elevated); box-shadow: inset 3px 0 0 var(--elevated); }
+  .empty { color: var(--muted); font-size: 14px; padding: 4px 2px; }
+  a { color: #7cc4ff; text-decoration: none; }
+  .news a { color: var(--text); font-weight: 600; display: block; }
+  .news .new { color: var(--elevated); font-size: 12px; font-weight: 700; margin-left: 6px; }
+  .tools { display: flex; gap: 8px; flex-shrink: 0; }
+  header .tools button { padding: 8px 10px; white-space: nowrap; }
+  input { font: inherit; background: var(--bg); color: var(--text); border: 1px solid var(--line);
+    border-radius: 10px; padding: 8px 10px; flex: 1; min-width: 0; text-transform: uppercase; }
+  .links { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .links a { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 10px; font-size: 14px; }
+  .warn { color: var(--elevated); font-size: 13px; margin-top: 8px; }
+  .livebar { display: flex; align-items: center; gap: 6px; color: var(--muted); font-size: 13px; margin: 0 0 10px; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--normal); }
+  .dot.pulse { animation: blink 1s infinite; }
+  @keyframes blink { 50% { opacity: .25; } }
+  .seg { display: flex; gap: 6px; margin-bottom: 8px; align-items: center; flex-wrap: wrap; }
+  .seg button { padding: 6px 12px; border-radius: 999px; font-size: 14px; }
+  .seg button.on { background: var(--text); color: var(--bg); border-color: var(--text); }
+  .seg label { margin-left: auto; color: var(--muted); font-size: 13px; display: flex; gap: 6px; align-items: center; }
+  .tag { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .6px; padding: 1px 6px;
+    border-radius: 6px; display: inline-block; margin-bottom: 4px; }
+  .tag-news { background: #1f3a5f; color: #9fd0ff; } .tag-social { background: #3b2a4d; color: #d9b8ff; }
+  .news.fresh { border-color: var(--elevated); }
+  footer { color: var(--muted); font-size: 12px; margin-top: 24px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>✈︎ Ground Stop Watch</h1>
+  <div class="tools">
+    <button id="notify" type="button">🔔 Alerts</button>
+    <button id="refresh" type="button">↻</button>
+  </div>
+</header>
+
+<div class="livebar"><span class="dot" id="dot"></span><span id="live">Connecting…</span></div>
+<section id="banner" class="banner" aria-live="polite">
+  <div class="lvl">Loading…</div>
+  <div class="head">Checking FAA status</div>
+  <div class="meta"></div>
+</section>
+<div id="warn" class="warn" hidden></div>
+
+<h2>My airports</h2>
+<div class="card row">
+  <input id="watchInput" placeholder="e.g. PDX SEA JFK" autocomplete="off" autocapitalize="characters" aria-label="Airport codes to watch">
+  <button id="watchSave" type="button">Save</button>
+</div>
+<div id="watchList"></div>
+
+<h2>Ground stops</h2><div id="gs"></div>
+<h2>Ground delay programs</h2><div id="gd"></div>
+<h2>Closures</h2><div id="cl"></div>
+<h2>Arrival / departure delays</h2><div id="dl"></div>
+
+<h2>Live feed</h2>
+<div class="seg" id="feedTabs">
+  <button type="button" data-f="all">All</button><button type="button" data-f="news">News</button><button type="button" data-f="social">Social</button>
+  <label><input type="checkbox" id="notifySocial"> Alert on social</label>
+</div>
+<div id="news"></div>
+
+<h2>Background</h2><div id="brief"></div>
+
+<h2>Official sources</h2>
+<div class="links">
+  <a href="https://nasstatus.faa.gov/" target="_blank" rel="noopener">FAA NAS Status</a>
+  <a href="https://www.fly.faa.gov/adv/advADB.jsp" target="_blank" rel="noopener">FAA ATCSCC advisories</a>
+  <a href="https://www.flightaware.com/live/cancelled/today" target="_blank" rel="noopener">FlightAware cancellations</a>
+  <a href="https://x.com/FAANews" target="_blank" rel="noopener">@FAANews</a>
+  <a href="https://www.alaskaair.com/travel-advisories" target="_blank" rel="noopener">Alaska advisories</a>
+  <a href="https://www.aa.com/i18n/travel-info/travel-alerts.jsp" target="_blank" rel="noopener">American alerts</a>
+  <a href="https://www.delta.com/flight-status-lookup" target="_blank" rel="noopener">Delta status</a>
+  <a href="https://www.united.com/en/us/fly/travel/notices.html" target="_blank" rel="noopener">United notices</a>
+  <a href="https://www.southwest.com/travel-advisories/" target="_blank" rel="noopener">Southwest advisories</a>
+  <a href="https://www.transportation.gov/airconsumer/airline-customer-service-dashboard" target="_blank" rel="noopener">DOT refund rights</a>
+</div>
+
+<footer>
+  Updates every 60 seconds: FAA status and news headlines from the server, plus live news (GDELT) and public posts (Bluesky, Mastodon) fetched directly.
+  Feed items are automated search results and social posts are unverified. Check the FAA and your airline before you travel.
+  <div id="foot"></div>
+  <div>Version 3</div>
+</footer>
+
+<script src="app-3.js"></script>
+</body>
+</html>
